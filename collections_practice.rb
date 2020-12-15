@@ -45,7 +45,9 @@ def sum_array (ary)
   # ary.each{|i| sum += i}
   # sum
 
-  ary.inject {|sum, n| sum + n}
+  # ary.inject {|sum, n| sum + n}
+
+  ary.reduce(:+)
 end
 
 def add_s (ary)
