@@ -41,9 +41,11 @@ def find_a(ary)
 end
 
 def sum_array (ary)
-  sum = 0
-  ary.each{|i| sum += i}
-  sum
+  # sum = 0
+  # ary.each{|i| sum += i}
+  # sum
+
+  ary.inject {|sum, n| sum + n}
 end
 
 def add_s (ary)
